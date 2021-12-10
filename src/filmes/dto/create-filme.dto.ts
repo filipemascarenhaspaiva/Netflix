@@ -25,6 +25,14 @@ export class CreateFilmeDto {
   genero: string;
 
   @IsNotEmpty()
+  @IsInt()
+  generoid: number;
+
+  @IsNotEmpty()
   @IsString()
   participantes: string;
+
+  @IsNotEmpty()
+  @IsString()
+  participantesid: number;
 }
